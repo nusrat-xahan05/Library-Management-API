@@ -10,16 +10,9 @@ app.use(express.json());
 app.use(routes);
 app.use(globalErrorHandler);
 
-app.get('/', (req: Request, res: Response, next: NextFunction) => {
-    try {
-        res.send({
-            success: true,
-            message: "Library Management API is Running..."
-        })
-    } catch (error) {
-        next({
-            message: 'API is Not Running...',
-            error: error
-        });
-    }
+app.get('/', (req, res) => {
+    res.send({
+        success: true,
+        message: "Library Management API is Running..."
+    })
 })
