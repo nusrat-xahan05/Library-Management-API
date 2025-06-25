@@ -102,16 +102,16 @@ npm start
 
 ### 📘 Book
 
-- `POST /books` - Create a book
-- `GET /books` - Get all books (with filter, sort, limit)
-- `GET /books/:bookId` - Get a book by ID
-- `PUT /books/:bookId` - Update book
-- `DELETE /books/:bookId` - Delete book
+- `POST api/books` - Create a book
+- `GET api/books` - Get all books (with filter, sort, limit)
+- `GET api/books/:bookId` - Get a book by ID
+- `PUT api/books/:bookId` - Update book
+- `DELETE api/books/:bookId` - Delete book
 
 ### 📕 Borrow
 
-- `POST /borrow` - Borrow a book (checks book stocks)
-- `GET /borrow` - Get summary of borrowed books (aggregation)
+- `POST api/borrow` - Borrow a book (checks book stocks)
+- `GET api/borrow` - Get summary of borrowed books (aggregation)
 
 ---
 

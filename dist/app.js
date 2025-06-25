@@ -13,17 +13,9 @@ exports.app.use((0, cors_1.default)());
 exports.app.use(express_1.default.json());
 exports.app.use(routes_1.routes);
 exports.app.use(errorHandler_middleware_1.globalErrorHandler);
-exports.app.get('/', (req, res, next) => {
-    try {
-        res.send({
-            success: true,
-            message: "Library Management API is Running..."
-        });
-    }
-    catch (error) {
-        next({
-            message: 'API is Not Running...',
-            error: error
-        });
-    }
+exports.app.get('/', (req, res) => {
+    res.send({
+        success: true,
+        message: "Library Management API is Running..."
+    });
 });
